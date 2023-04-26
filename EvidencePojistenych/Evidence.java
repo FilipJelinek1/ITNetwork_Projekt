@@ -11,6 +11,7 @@ public class Evidence {
         databaze = new Databaze();
     }
 
+
     public void pridejPojisteneho() {
         System.out.println("Přidejte pojištěnce");
         System.out.println("Zadejte jméno");
@@ -25,6 +26,7 @@ public class Evidence {
         databaze.pridejPojisteneho(jmeno, prijmeni, vek, telefon);
 
     }
+
 
     public void vypisPojistence() {
         System.out.println("Zadejte jméno hledaného pojištěnce: ");
