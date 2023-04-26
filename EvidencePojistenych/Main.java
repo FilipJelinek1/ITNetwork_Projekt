@@ -2,6 +2,9 @@ package EvidencePojistenych;
 
 import java.util.Scanner;
 
+/*
+@Author Filip
+ */
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +12,7 @@ public class Main {
         Evidence evidence = new Evidence();
 
         String volba = "";
-        // hlavní cyklus
+        // hlavní menu
         while (!volba.equals("4")) {
             System.out.println("====================");
             System.out.println("Databáze pojištěných");
@@ -26,22 +29,27 @@ public class Main {
             volba = sc.nextLine();
             System.out.println();
 
-            // reakce na volbu
+            // výběr dle volby uživatele
             switch (volba) {
 
                 case "1":
+                    // přidání nového pojištěnce
                     evidence.pridejPojisteneho();
                     break;
                 case "2":
+                    // vyhledání pojištěnce
                     evidence.vypisPojistence();
                     break;
                 case "3":
+                    // vypíše všechny pojištěnce
                     evidence.vypisVsechPojistencu();
                     break;
                 case "4":
-                    System.out.println("Libovolnou klávesou ukončíte program...");
+                    // ukončí program
+                    System.out.println("Klávesou ukončíte program...");
                     break;
                 default:
+                    // v případě neplatné číslice / volby
                     System.out.println("Naplatná volba, stisknetě libovolnou číslici a opakujte volbu.");
                     break;
             }
