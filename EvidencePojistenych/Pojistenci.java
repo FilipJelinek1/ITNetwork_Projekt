@@ -1,13 +1,14 @@
 package EvidencePojistenych;
+/*
+@Author Filip
+ */
 
 public class Pojistenci {
 
-
-    public String jmeno;
-    public String prijmeni;
-    public int vek;
-    public int telefon;
-
+    public String jmeno; // křestní jméno pojištěnce
+    public String prijmeni; // příjmení pojištěnce
+    public int vek; // zadání věku pojištěnce
+    public int telefon; // tel.číslo pojištěnce
 
     public Pojistenci(String jmeno , String prijmeni, int vek, int telefon){
         this.jmeno = jmeno;
@@ -15,6 +16,8 @@ public class Pojistenci {
         this.vek = vek;
         this.telefon = telefon;
     }
+
+    // startregion gett a sett
     public String getJmeno() {
         return jmeno;
     }
@@ -47,6 +50,7 @@ public class Pojistenci {
     public void setTelefon(int telefon) {
         this.telefon = telefon;
     }
+    // endregion gett / sett
 
     @Override
     public String toString(){
